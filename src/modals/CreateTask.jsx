@@ -74,7 +74,7 @@ const CreateTask = ({ isOpen, onClose, save }) => {
                     Both Title and Note are required.
                   </FormHelperText>
                 ) : (
-                  <FormErrorMessage>Email is required.</FormErrorMessage>
+                  <FormErrorMessage>Field is required.</FormErrorMessage>
                 )}
 
                 <Button
