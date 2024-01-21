@@ -39,16 +39,18 @@ const CardComp = ({
       <Card
         variant={isSelected ? "outline" : "filled"}
         width="full"
-        className="cursor-pointer"
+        maxHeight="full"
       >
         <CardBody>
-          {/* <Checkbox
+          <Checkbox
+            bg="blackAlpha.200"
+            className="relative left-40"
             isChecked={isSelected}
             onChange={() => handleCheckboxChange(taskObj.id)}
-          > */}
+          ></Checkbox>
           <Heading size="md">{taskObj.Name}</Heading>
           <Text fontSize="lg">{taskObj.Note}</Text>
-          {/* </Checkbox> */}
+
           <div className="flex justify-end gap-4 mt-4">
             <Button onClick={handleOpen} colorScheme="whatsapp">
               Update
